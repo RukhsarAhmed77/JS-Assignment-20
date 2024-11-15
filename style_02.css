@@ -1,0 +1,95 @@
+/* Question 02 */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+}
+   
+.btn:hover {
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+     0 15px 0 -4px #39a2db,
+     0 16px 10px -3px #39a2db;
+}
+   
+.btn:active {
+    transition: all 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959,
+     0 8px 0 -4px #39a2db,
+     0 12px 10px -3px #39a2db;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#000, #fff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nnn{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    box-shadow: 0 5px 50px rgba(255, 0, 0, 0.5);
+    backdrop-filter: blur(30%);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    flex-direction: row;
+}
+
+.nnn p{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #aa0473fa;
+    margin-right: 20px;
+}
+
+.main{
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+#toggleButton{
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#toggleButton:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}

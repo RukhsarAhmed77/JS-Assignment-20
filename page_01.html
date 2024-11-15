@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 01</title>
+    <link rel="stylesheet" href="style_01.css">
+</head>
+
+<body>
+    <!-- Question 01 -->
+    <div>
+        <div class="nnn">
+            <p>Change BG Color</p>
+            <button class="btn" onclick="toggleBackground()">Change</button>
+        </div>
+        
+        <div class="container">
+            <h2>Signup Form</h2>
+            <form id="signupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="bn">
+                    <button type="submit" class="bnc">Sign up</button>
+                </div>
+            </form>
+
+            <div id="output">
+                <h3>Submitted Data:</h3>
+                <p id="outputText">Fill the form and submit to see the data here.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script_01.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 03</title>
+    <link rel="stylesheet" href="style_03.css">
+</head>
+
+<body>
+    <!-- Question 03 -->
+     <div>
+        <div class="nnn">
+            <p>Change BG Color</p>
+            <button class="btn" onclick="toggleBackground()">Change</button>
+        </div>
+    </div>
+    
+    <h2>Student Records</h2>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>20</td>
+                <td> <b>A</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>22</td>
+                <td> <b>B</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Michael Johnson</td>
+                <td>19</td>
+                <td> <b>A</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Amy Lee</td>
+                <td>21</td>
+                <td> <b>C</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Chris Brown</td>
+                <td>23</td>
+                <td> <b>B</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Sarah Davis</td>
+                <td>24</td>
+                <td> <b>A</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>David Wilson</td>
+                <td>25</td>
+                <td> <b>C</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Emma Taylor</td>
+                <td>22</td>
+                <td>A</td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>James Moore</td>
+                <td>21</td>
+                <td> <b>B</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Olivia Harris</td>
+                <td>19</td>
+                <td> <b>A</b> </td>
+                <td><button class="bncc" onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var body = document.body;
+    var currentAngle = 0;
+    var colors = ['#fff', '#000', 'red', 'blue', 'green', 'yellow', 'orange', 'pink', 'violet'];
+    var colorIndex = 0;
+        
+    function toggleBackground() {
+        currentAngle += 360;
+        colorIndex = (colorIndex + 1) % colors.length;
+    
+        
+        body.style.transition = 'background 1s ease';
+        body.style.background = `linear-gradient(${currentAngle}deg, ${colors[colorIndex]}, ${colors[(colorIndex + 1) % colors.length]})`;
+    }
+    </script>
+</body>
+
+</html>
